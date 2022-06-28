@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <title>Nav List</title>
+</head>
+<body>
+  <header>
+    <div class="inner-width">
+      <h1>Nav List</h1>
+      <div class="menu-icon">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </header>
+  <div class="nav-menu">
+    <nav>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Portfolio</a></li>
+    </nav>
+  </div>
+  <script>
+    $(".menu-icon").click(function(){
+      $(this).toggleClass("active");
+      $(".nav-menu").toggleClass("active");
+      $(".menu-icon i").toggleClass("fa-times");
+    });
+  </script>
+</body>
+</html>
